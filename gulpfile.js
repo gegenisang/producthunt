@@ -37,7 +37,7 @@ gulp.task("sass", function () {
 
 gulp.task("js", function () {
   return gulp.src(paths.js + "/**/*.js")
-    .pipe(gukp.dest(paths.dist + "/js"));
+    .pipe(gulp.dest(paths.dist + "/js"));
 });
 
 gulp.task("html", function () {
@@ -53,6 +53,7 @@ gulp.task("watch", function () {
   gulp.watch(paths.js + "/**/*.js", ["js"]);
   gulp.watch(paths.src + "/**/*.html", ["html"]);
   gulp.watch(paths.src + '/img/**/*.*', ["img"]);
+
   gulp.watch(paths.dist + '/**/*').on("change", browserSync.reload);
 
 });
