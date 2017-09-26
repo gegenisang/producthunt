@@ -9,12 +9,16 @@ h4,
 h5,
 h6,
 form,
-input {
+input,
+ul,
+li,
+a,
+img {
   padding: 0;
   margin: 0; }
 
-body {
-  outline: 1px solid #bbb;
+* {
+  outline: 1px solid #ddd;
   box-sizing: border-box; }
 
 li {
@@ -23,3 +27,104 @@ li {
 a {
   text-decoration: none;
   color: #333; }
+  a:hover, a:focus {
+    text-decoration: none; }
+
+body {
+  background-color: #f9f9f9; }
+
+#navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  position: relative;
+  margin-bottom: 0px; }
+  #navbar.navbar-default {
+    border-bottom: 1px solid #e8e8e8; }
+  #navbar .navbar-brand {
+    margin-top: -10px; }
+    #navbar .navbar-brand img {
+      width: 40px;
+      display: inline-block;
+      margin-top: -20px;
+      margin-right: 5px; }
+    #navbar .navbar-brand .text {
+      padding-left: 0px;
+      display: inline-block; }
+      #navbar .navbar-brand .text .web-name {
+        font-size: 16px;
+        color: #da552f;
+        font-weight: 600; }
+      #navbar .navbar-brand .text .web-des {
+        font-size: 13px;
+        color: #999; }
+
+.des {
+  background-color: #fff;
+  border-bottom: 1px solid #e8e8e8; }
+  .des #page-des {
+    padding: 80px 0; }
+    .des #page-des .des-logo img {
+      width: 260px; }
+
+.main {
+  padding: 10px 0 30px; }
+  .main .side-menu h4 {
+    margin-bottom: 10px; }
+  .main .side-menu ul li {
+    margin-top: 10px; }
+  .main .main-top {
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px; }
+    .main .main-top .list-header {
+      padding: 20px 20px 0; }
+      .main .main-top .list-header h3 {
+        border-bottom: 1px solid #e8e8e8;
+        padding-bottom: 20px; }
+    .main .main-top #list li {
+      border-bottom: 1px solid #e8e8e8; }
+      .main .main-top #list li:hover {
+        background-color: #f9f9f9; }
+      .main .main-top #list li a {
+        color: #999;
+        display: block; }
+        .main .main-top #list li a:visited h4 {
+          color: #999; }
+        .main .main-top #list li a .list-img {
+          padding: 15px 10px 15px 36px;
+          text-align: center; }
+          .main .main-top #list li a .list-img img {
+            width: 100%;
+            min-width: 50px; }
+        .main .main-top #list li a .list-text {
+          padding: 20px 0px; }
+          .main .main-top #list li a .list-text h4 {
+            color: #000;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 10px; }
+          .main .main-top #list li a .list-text .btns {
+            margin-top: 10px; }
+            .main .main-top #list li a .list-text .btns div {
+              display: inline-block; }
+            .main .main-top #list li a .list-text .btns span {
+              display: inline-block;
+              border: 1px solid #e8e8e8;
+              height: 24px;
+              line-height: 24px;
+              font-size: 11px;
+              padding: 0 4px;
+              border-radius: 3px; }
+            .main .main-top #list li a .list-text .btns .pull-left .name {
+              position: relative; }
+            .main .main-top #list li a .list-text .btns .pull-left .pro-name {
+              background-color: #f8f8f8; }
+              .main .main-top #list li a .list-text .btns .pull-left .pro-name:hover {
+                background-color: #ebebeb; }
+            .main .main-top #list li a .list-text .btns .pull-right {
+              padding-right: 30px; }
+              .main .main-top #list li a .list-text .btns .pull-right .fa-caret-up {
+                font-size: 1.5em; }
+              .main .main-top #list li a .list-text .btns .pull-right .last-btn {
+                margin-left: 10px; }

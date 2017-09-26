@@ -1,1 +1,151 @@
 @import 'base';
+body {
+  background-color: #f9f9f9;
+}
+
+#navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  position: relative;
+  margin-bottom: 0px;
+  &.navbar-default {
+    border-bottom: 1px solid #e8e8e8;
+  }
+  .navbar-brand {
+    margin-top: -10px;
+    img {
+      width: 40px;
+      display: inline-block;
+      margin-top: -20px;
+      margin-right: 5px;
+    }
+    .text {
+      padding-left: 0px;
+      display: inline-block;
+      .web-name {
+        font-size: 16px;
+        color: #da552f;
+        font-weight: 600;
+      }
+      .web-des {
+        font-size: 13px;
+        color: #999;
+      }
+    }
+  } // #myNavbar {
+  //   #form {
+  //     position: relative;
+  //     left: 50%;
+  //     margin-left: -150px;
+  //     .navbar-form {}
+  //   }
+  // }
+}
+
+.des {
+  background-color: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  #page-des {
+    padding: 80px 0;
+    .des-logo {
+      img {
+        width: 260px;
+      }
+    }
+  }
+}
+
+.main {
+  padding: 10px 0 30px;
+  .side-menu {
+    h4 {
+      margin-bottom: 10px;
+    }
+    ul {
+      li {
+        margin-top: 10px;
+      }
+    }
+  }
+  .main-top {
+    // padding: 20px;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    .list-header {
+      padding: 20px 20px 0;
+      h3 {
+        border-bottom: 1px solid #e8e8e8;
+        padding-bottom: 20px;
+      }
+    }
+    #list {
+      li {
+        border-bottom: 1px solid #e8e8e8;
+        &:hover {
+          background-color: #f9f9f9;
+        }
+        a {
+          color: #999;
+          display: block;
+          &:visited h4 {
+            color: #999;
+          }
+          .list-img {
+            padding: 15px 10px 15px 36px;
+            text-align: center;
+            img {
+              width: 100%;
+              min-width: 50px;
+            }
+          }
+          .list-text {
+            padding: 20px 0px;
+            h4 {
+              color: #000;
+              font-weight: normal;
+              font-size: 20px;
+              line-height: 24px;
+              margin-bottom: 10px;
+            }
+            .btns {
+              margin-top: 10px;
+              div {
+                display: inline-block;
+              }
+              span {
+                display: inline-block;
+                border: 1px solid #e8e8e8;
+                height: 24px;
+                line-height: 24px;
+                font-size: 11px;
+                padding: 0 4px;
+                border-radius: 3px;
+              }
+              .pull-left {
+                .name {
+                  position: relative;
+                }
+                .pro-name {
+                  background-color: #f8f8f8;
+                  &:hover {
+                    background-color: #ebebeb;
+                  }
+                }
+              }
+              .pull-right {
+                padding-right: 30px;
+                .fa-caret-up {
+                  font-size: 1.5em;
+                }
+                .last-btn {
+                  margin-left: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
