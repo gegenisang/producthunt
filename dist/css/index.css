@@ -108,33 +108,81 @@ body {
             width: 100%;
             min-width: 60px; }
         .main .main-box #list li a .list-text {
-          padding: 20px 0px; }
+          padding: 20px 10px; }
           .main .main-box #list li a .list-text h4 {
             color: #000;
             font-weight: normal;
             font-size: 20px;
             line-height: 24px;
             margin-bottom: 10px; }
+          .main .main-box #list li a .list-text p {
+            align-items: center; }
           .main .main-box #list li a .list-text .btns {
             margin-top: 10px; }
             .main .main-box #list li a .list-text .btns div {
-              display: inline-block; }
-            .main .main-box #list li a .list-text .btns span {
               display: inline-block;
-              border: 1px solid #e8e8e8;
-              height: 24px;
-              line-height: 24px;
-              font-size: 11px;
-              padding: 0 6px;
-              border-radius: 3px; }
-            .main .main-box #list li a .list-text .btns .pull-left .name {
+              flex-grow: 1; }
+            .main .main-box #list li a .list-text .btns .pull-left .topic-wrap {
               position: relative; }
+              .main .main-box #list li a .list-text .btns .pull-left .topic-wrap .topic-buttons {
+                border: 1px solid #e8e8e8;
+                border-radius: 4px;
+                font-size: 11px;
+                height: 33px;
+                display: inline-flex;
+                margin-right: 4px; }
+                .main .main-box #list li a .list-text .btns .pull-left .topic-wrap .topic-buttons .topic-tag {
+                  padding: 0 8px;
+                  align-items: center;
+                  display: inline-flex; }
+                .main .main-box #list li a .list-text .btns .pull-left .topic-wrap .topic-buttons .topic-tag:hover {
+                  background: #ebebeb; }
+                .main .main-box #list li a .list-text .btns .pull-left .topic-wrap .topic-buttons .topic-plus {
+                  width: 0;
+                  padding: 0;
+                  border: none;
+                  overflow: hidden;
+                  align-items: center;
+                  display: inline-flex;
+                  justify-content: center;
+                  font-size: 14px;
+                  transition: width 0.3s ease-out; }
+                .main .main-box #list li a .list-text .btns .pull-left .topic-wrap .topic-buttons:hover .topic-plus {
+                  width: 24px;
+                  padding: 0 16px;
+                  border-left: 1px solid #e8e8e8; }
+                .main .main-box #list li a .list-text .btns .pull-left .topic-wrap .topic-buttons .topic-plus:hover {
+                  background: #ebebeb; }
+                .main .main-box #list li a .list-text .btns .pull-left .topic-wrap .topic-buttons:hover .topic-plus:after {
+                  content: "+"; }
             .main .main-box #list li a .list-text .btns .pull-left .pro-name {
               background-color: #f8f8f8; }
               .main .main-box #list li a .list-text .btns .pull-left .pro-name:hover {
                 background-color: #ebebeb; }
+              .main .main-box #list li a .list-text .btns .pull-left .pro-name .span {
+                display: inline-flex;
+                border-left: 0 solid #e8e8e8;
+                overflow: hidden;
+                width: 0;
+                height: 24px;
+                line-height: 21px;
+                justify-content: center;
+                transition: width .1s ease-out; }
+                .main .main-box #list li a .list-text .btns .pull-left .pro-name .span:after {
+                  content: "+"; }
             .main .main-box #list li a .list-text .btns .pull-right {
-              padding-right: 30px; }
+              padding-right: 30px;
+              padding-top: 5px; }
+              .main .main-box #list li a .list-text .btns .pull-right span {
+                display: inline-block;
+                border: 1px solid #e8e8e8;
+                height: 24px;
+                line-height: 24px;
+                font-size: 11px;
+                padding: 0 6px;
+                border-radius: 3px; }
+              .main .main-box #list li a .list-text .btns .pull-right .btn1 span:first-child {
+                color: #000; }
               .main .main-box #list li a .list-text .btns .pull-right .fa-caret-up {
                 font-size: 1.5em; }
               .main .main-box #list li a .list-text .btns .pull-right .last-btn {
