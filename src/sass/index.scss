@@ -1,6 +1,7 @@
 @import 'base';
 body {
   background-color: #f9f9f9;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
 }
 
 #navbar {
@@ -173,6 +174,72 @@ body {
         }
         .fa-caret-down {
           margin-right: 6px;
+        }
+      }
+    }
+  }
+}
+
+.right-box {
+  padding: 20px;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  background-color: #fff;
+  .img-content {
+    margin-bottom: 20px;
+    a {
+      display: block; // padding: 20px;
+      border: 1px solid #e8e8e8;
+      .person {
+        background-image: url(../img/crow.jpg);
+        width: 100%;
+        height: 112px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center right;
+        background-clip: padding-box;
+      }
+      p {
+        padding: 20px;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000;
+        font-weight: 300;
+      }
+    }
+  }
+  .text-des {
+    p {
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 18px;
+      margin-bottom: 15px;
+      img {
+        width: 12px;
+      }
+    }
+    form {
+      .email-box {
+        width: 100%;
+        font-size: 13px;
+        line-height: 18px;
+        input {
+          border: 1px solid #e8e8e8;
+          border-radius: 3px;
+          width: inherit;
+          padding: 0 10px;
+          height: 34px;
+        }
+        button {
+          margin-top: 20px;
+          width: inherit;
+          height: 34px;
+          background-color: #da553f;
+          color: #fff;
+          padding: 0 13px;
+          border: 1px solid transparent;
+          border-radius: 3px;
+          justify-content: center;
         }
       }
     }
