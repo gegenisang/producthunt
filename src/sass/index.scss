@@ -240,6 +240,11 @@ body {
           border: 1px solid transparent;
           border-radius: 3px;
           justify-content: center;
+          outline: none;
+          &:hover {
+            background-color: #ea532a;
+            border-color: #ea532a;
+          }
         }
       }
     }
