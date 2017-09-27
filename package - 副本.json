@@ -6,8 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gegenisang/producthunt.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gegenisang/producthunt/issues"
+  },
+  "homepage": "https://github.com/gegenisang/producthunt#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-bower": "0.0.13",
