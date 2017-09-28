@@ -42,9 +42,9 @@ gulp.task("js", function () {
 
 gulp.task("html", function () {
   return gulp.src(paths.src + "/*.html")
-    .pipe(htmlmin({
-      collapseWhitespace: true
-    }))
+    // .pipe(htmlmin({
+    //   collapseWhitespace: true
+    // }))
     .pipe(gulp.dest(paths.dist));
 });
 

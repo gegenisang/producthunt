@@ -124,15 +124,7 @@
                 div {
                   display: inline-block;
                   flex-grow: 1;
-                } // span {
-                //   display: inline-block;
-                //   border: 1px solid #e8e8e8;
-                //   height: 24px;
-                //   line-height: 24px;
-                //   font-size: 11px;
-                //   padding: 0 6px;
-                //   border-radius: 3px;
-                // }
+                }
                 .pull-left {
                   .topic-wrap {
                     position: relative;
@@ -366,17 +358,17 @@
         text-transform: uppercase;
         font-size: 1px;
         line-height: 16px;
+        a {
+          color: #da552f;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
         .hidden-buttons {
           display: none;
           span {
             margin: 0 20px;
             color: #999;
-          }
-          a {
-            color: #da552f;
-            &:hover {
-              text-decoration: underline;
-            }
           }
           .time {
             color: #c9c9c9;

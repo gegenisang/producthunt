@@ -9,7 +9,6 @@
     }
     ul {
       li {
-        // margin-top: 10px;
         width: 100%;
         &.end a,
         &.end:hover a,
@@ -58,6 +57,9 @@
               color: #999;
             }
           }
+        }
+        .submenu {
+          padding-left: 30px;
         }
       }
     }
