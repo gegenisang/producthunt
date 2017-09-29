@@ -10,22 +10,22 @@
     ul {
       li {
         width: 100%;
-        &.end a,
-        &.end:hover a,
-        &.end.active a {
+        &.end>a,
+        &.end:hover>a,
+        &.end.active>a {
           color: #da552f;
         }
-        &.active a,
-        &.active:hover a {
+        &.active>a,
+        &.active:hover>a {
           border: 1px solid #e8e8e8;
           background-color: #fff;
         }
-        &:hover a {
+        &:hover>a {
           border: 1px solid #e8e8e8;
           background-color: #fbfbfb;
           color: #000;
         }
-        a {
+        &>a {
           display: flex;
           align-items: center;
           border-radius: 3px;
@@ -60,6 +60,19 @@
         }
         .submenu {
           padding-left: 30px;
+          display: none;
+          li {
+            &.active>a,
+            &.active:hover>a {
+              background-color: #fff;
+            }
+            a {
+              &:hover {
+                background-color: #fbfbfb;
+                border: 1px solid #e8e8e8;
+              }
+            }
+          }
         }
       }
     }
