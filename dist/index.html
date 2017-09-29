@@ -67,13 +67,26 @@
               <img src="img/miao.png" alt="cat">
             </div>
           </div>
-          <div class="col-sm-6 col-sm-pull-4">
+          <div class="col-sm-5 col-sm-pull-4">
             <h2>Discover your next favorite thing</h2>
             <p>Product Hunt surfaces the best new products, every day. It's a place for product-loving enthusiasts to share
               and geek out about the latest mobile apps, websites, hardware projects, and tech creations.</p>
-            <p>
-              <button type="button">SIGN UP</button>
+            <p class="signup">
+              <button type="button" data-toggle="modal" data-target="#myModal">SIGN UP</button>
             </p>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
