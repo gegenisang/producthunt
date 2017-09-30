@@ -18,6 +18,7 @@ img {
   margin: 0; }
 
 * {
+  outline: 1px solid #ddd;
   box-sizing: border-box; }
 
 li {
@@ -49,6 +50,7 @@ img {
   margin: 0; }
 
 * {
+  outline: 1px solid #ddd;
   box-sizing: border-box; }
 
 li {
@@ -183,9 +185,38 @@ body {
       .des #page-des .signup button:hover {
         background-color: #ea532a;
         border-color: #ea532a; }
-    .des #page-des .modal .modal-dislog {
-      width: 100%;
-      height: 100%; }
+    .des #page-des .modal {
+      background-color: #fff;
+      opacity: 0.9; }
+      .des #page-des .modal .modal-dialog {
+        position: relative;
+        width: 100%;
+        margin: 0; }
+        .des #page-des .modal .modal-dialog #lefttop {
+          margin-bottom: 10px;
+          height: 100px; }
+          .des #page-des .modal .modal-dialog #lefttop button.close {
+            float: left;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            background-color: #999;
+            color: #fff;
+            text-align: center;
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+            opacity: 1;
+            border-radius: 50%; }
+            .des #page-des .modal .modal-dialog #lefttop button.close:hover {
+              background-color: #da552f; }
+            .des #page-des .modal .modal-dialog #lefttop button.close span {
+              display: inline-block;
+              font-size: 23px;
+              width: 100%;
+              height: 100%; }
+        .des #page-des .modal .modal-dialog .content img {
+          width: 180px; }
 
 .main {
   padding: 30px 0; }
