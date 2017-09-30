@@ -18,7 +18,6 @@ img {
   margin: 0; }
 
 * {
-  outline: 1px solid #ddd;
   box-sizing: border-box; }
 
 li {
@@ -50,7 +49,6 @@ img {
   margin: 0; }
 
 * {
-  outline: 1px solid #ddd;
   box-sizing: border-box; }
 
 li {
@@ -187,11 +185,12 @@ body {
         border-color: #ea532a; }
     .des #page-des .modal {
       background-color: #fff;
-      opacity: 0.9; }
+      opacity: 0.9;
+      text-align: center; }
       .des #page-des .modal .modal-dialog {
         position: relative;
         width: 100%;
-        margin: 0; }
+        margin: auto auto; }
         .des #page-des .modal .modal-dialog #lefttop {
           margin-bottom: 10px;
           height: 100px; }
@@ -215,8 +214,46 @@ body {
               font-size: 23px;
               width: 100%;
               height: 100%; }
-        .des #page-des .modal .modal-dialog .content img {
-          width: 180px; }
+        .des #page-des .modal .modal-dialog .content-box {
+          background: url(../img/miao.png) top/150px 150px no-repeat;
+          padding: 160px 10px 50px;
+          text-align: center; }
+          .des #page-des .modal .modal-dialog .content-box h2 {
+            font-size: 22px;
+            font-weight: 600; }
+          .des #page-des .modal .modal-dialog .content-box .text {
+            max-width: 500px;
+            margin: 0 auto;
+            padding-bottom: 20px;
+            color: #444;
+            font-size: 18px; }
+          .des #page-des .modal .modal-dialog .content-box .btn {
+            border-radius: 3px;
+            margin-bottom: 10px;
+            padding: 5px 20px; }
+            .des #page-des .modal .modal-dialog .content-box .btn a {
+              color: #fff;
+              text-transform: uppercase; }
+              .des #page-des .modal .modal-dialog .content-box .btn a i {
+                margin-right: 4px;
+                font-size: 18px;
+                vertical-align: middle; }
+          .des #page-des .modal .modal-dialog .content-box .btn1 {
+            background-color: #00aced; }
+            .des #page-des .modal .modal-dialog .content-box .btn1:hover {
+              background-color: #00b4f5; }
+          .des #page-des .modal .modal-dialog .content-box .btn2 {
+            background-color: #3b5998; }
+            .des #page-des .modal .modal-dialog .content-box .btn2:hover {
+              background-color: #305cbb; }
+          .des #page-des .modal .modal-dialog .content-box .btn3 {
+            background-color: #333; }
+            .des #page-des .modal .modal-dialog .content-box .btn3:hover {
+              background-color: #2e2e2e; }
+          .des #page-des .modal .modal-dialog .content-box #des {
+            padding-top: 10px;
+            color: #999;
+            font-size: 15px; }
 
 .main {
   padding: 30px 0; }
