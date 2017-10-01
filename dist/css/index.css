@@ -18,6 +18,7 @@ img {
   margin: 0; }
 
 * {
+  outline: 1px solid #ddd;
   box-sizing: border-box; }
 
 li {
@@ -49,6 +50,7 @@ img {
   margin: 0; }
 
 * {
+  outline: 1px solid #ddd;
   box-sizing: border-box; }
 
 li {
@@ -147,6 +149,33 @@ body {
       #navbar .navbar-brand .text .web-des {
         font-size: 13px;
         color: #999; }
+  #navbar #form {
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    width: 280px;
+    top: 2px; }
+    #navbar #form .navbar-form {
+      position: relative;
+      margin: 5px 0 0;
+      width: 280px;
+      outline: none; }
+      #navbar #form .navbar-form i {
+        position: absolute;
+        left: 25px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #999;
+        font-size: 20px; }
+      #navbar #form .navbar-form input {
+        width: 100%;
+        box-shadow: none; }
+        #navbar #form .navbar-form input:hover, #navbar #form .navbar-form input:focus {
+          outline: none;
+          border-color: #ddd; }
+        #navbar #form .navbar-form input.form-control {
+          padding: 6px 30px;
+          outline: none; }
 
 .des {
   background-color: #fff;
@@ -538,7 +567,8 @@ body {
       border-radius: 3px;
       width: inherit;
       padding: 0 10px;
-      height: 34px; }
+      height: 34px;
+      outline: 0; }
     .right-box .text-des form .email-box button {
       margin-top: 20px;
       width: inherit;
@@ -551,5 +581,6 @@ body {
       justify-content: center;
       outline: none; }
       .right-box .text-des form .email-box button:hover {
+        outline: none;
         background-color: #ea532a;
         border-color: #ea532a; }
