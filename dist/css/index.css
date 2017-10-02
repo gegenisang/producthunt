@@ -18,7 +18,6 @@ img {
   margin: 0; }
 
 * {
-  outline: 1px solid #ddd;
   box-sizing: border-box; }
 
 li {
@@ -50,7 +49,6 @@ img {
   margin: 0; }
 
 * {
-  outline: 1px solid #ddd;
   box-sizing: border-box; }
 
 li {
@@ -176,6 +174,116 @@ body {
         #navbar #form .navbar-form input.form-control {
           padding: 6px 30px;
           outline: none; }
+  #navbar #form-modal .modal-dialog {
+    margin: 10px auto; }
+  #navbar #form-modal .modal-header {
+    position: relative;
+    border-bottom: none; }
+    #navbar #form-modal .modal-header .search-form {
+      padding-left: 30px;
+      position: relative;
+      width: 100%; }
+      #navbar #form-modal .modal-header .search-form .fa-search {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 16px;
+        margin-top: 2px;
+        color: #999; }
+      #navbar #form-modal .modal-header .search-form #search-input {
+        position: absolute;
+        top: 0;
+        left: 24px;
+        width: 90%;
+        border: none;
+        outline: none; }
+  #navbar #form-modal .modal-content {
+    box-shadow: none;
+    border-radius: 3px 3px 0px 0px; }
+  #navbar #form-modal .modal-body {
+    padding-top: 0px; }
+    #navbar #form-modal .modal-body ul li {
+      margin-bottom: 10px; }
+      #navbar #form-modal .modal-body ul li:hover {
+        background-color: #e8e8e8; }
+      #navbar #form-modal .modal-body ul li a {
+        width: 100%;
+        cursor: pointer;
+        display: block;
+        padding: 10px;
+        color: #000;
+        font-size: 13px;
+        line-height: 18px;
+        font-weight: 400; }
+  #navbar #form-modal .modal-footer {
+    border-top: none;
+    text-transform: uppercase;
+    color: #999;
+    padding: 0 22px 22px;
+    cursor: pointer; }
+  #navbar .navbar-right a {
+    color: #999;
+    font-size: 13px;
+    line-height: 18px; }
+    #navbar .navbar-right a:hover {
+      text-decoration: underline; }
+  #navbar .navbar-right .ship a {
+    font-size: 13px;
+    line-height: 18px;
+    color: #da552f;
+    font-weight: 400; }
+    #navbar .navbar-right .ship a:hover {
+      text-decoration: underline; }
+  #navbar .navbar-right .ship img {
+    height: 13px;
+    display: inline-block;
+    vertical-align: middle; }
+  #navbar .navbar-right .jobs {
+    position: relative; }
+    #navbar .navbar-right .jobs sup {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: #da552f;
+      font-size: 40%; }
+  #navbar .navbar-right .threedot a {
+    font-size: 8px;
+    letter-spacing: 2px;
+    position: relative; }
+    #navbar .navbar-right .threedot a:after {
+      position: absolute;
+      right: 0;
+      content: " ";
+      display: block;
+      width: 1px;
+      height: 18px;
+      border-right: 2px solid #e8e8e8;
+      color: #000;
+      top: 50%;
+      transform: translateY(-50%); }
+    #navbar .navbar-right .threedot a:hover {
+      color: #666;
+      text-decoration: none; }
+
+.modal-backdrop {
+  top: 50px; }
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    margin: 5px auto; } }
+
+@media (min-width: 992px) {
+  .modal-lg {
+    width: 100%; } }
+
+@media (min-width: 768px) {
+  .modal-lg {
+    width: 80%;
+    margin: 10px auto; } }
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: transparent; }
 
 .des {
   background-color: #fff;
