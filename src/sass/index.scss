@@ -204,11 +204,9 @@
         }
         .dropdown-menu {
           min-width: 100px;
-          hr {
-            background-color: #e8e8e8;
-            border: 0;
-            height: 1px;
-            margin: 5px 0;
+          .divider {
+            width: 60%;
+            margin: 5px auto;
           }
           a {
             text-transform: uppercase;

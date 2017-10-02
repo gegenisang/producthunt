@@ -273,11 +273,9 @@ body {
       text-decoration: none; }
   #navbar .navbar-right .threedot .dropdown-menu {
     min-width: 100px; }
-    #navbar .navbar-right .threedot .dropdown-menu hr {
-      background-color: #e8e8e8;
-      border: 0;
-      height: 1px;
-      margin: 5px 0; }
+    #navbar .navbar-right .threedot .dropdown-menu .divider {
+      width: 60%;
+      margin: 5px auto; }
     #navbar .navbar-right .threedot .dropdown-menu a {
       text-transform: uppercase;
       letter-spacing: 0px; }
