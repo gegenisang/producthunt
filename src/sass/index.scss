@@ -38,6 +38,7 @@
     #form {
       position: absolute;
       left: 50%;
+      z-index: 2000;
       margin-left: -150px;
       width: 280px;
       top: 2px;
@@ -135,6 +136,13 @@
       }
     }
     .navbar-right {
+      li {
+        &:last-child {
+          a {
+            padding-left: 0px;
+          }
+        }
+      }
       a {
         color: #999;
         font-size: 13px;
@@ -189,6 +197,38 @@
           &:hover {
             color: #666;
             text-decoration: none;
+          }
+        }
+      }
+      .login,
+      .signup {
+        a {
+          span {
+            padding: 6px 12px;
+            border-radius: 3px;
+          }
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+      .login {
+        span {
+          border: 1px solid #e8e8e8;
+          color: #000;
+          &:hover {
+            background-color: #e8e8e8;
+          }
+        }
+      }
+      .signup {
+        span {
+          border: 1px solid #da552f;
+          color: #fff;
+          background-color: #da552f;
+          &:hover {
+            background-color: #ea532a;
+            border-color: #ea532a;
           }
         }
       }
