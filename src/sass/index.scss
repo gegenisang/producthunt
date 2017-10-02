@@ -13,6 +13,11 @@
     &.navbar-default {
       border-bottom: 1px solid #e8e8e8;
     }
+    &.navbar-default .navbar-nav>.open>a,
+    &.navbar-default .navbar-nav>.open>a:focus,
+    &.navbar-default .navbar-nav>.open>a:hover {
+      background-color: transparent;
+    }
     .navbar-brand {
       margin-top: -10px;
       img {
@@ -38,7 +43,7 @@
     #form {
       position: absolute;
       left: 50%;
-      z-index: 2000;
+      z-index: 3;
       margin-left: -150px;
       width: 280px;
       top: 2px;
@@ -136,11 +141,9 @@
       }
     }
     .navbar-right {
-      li {
-        &:last-child {
-          a {
-            padding-left: 0px;
-          }
+      li[class="signup"] {
+        a {
+          padding-left: 0px;
         }
       }
       a {
@@ -199,6 +202,26 @@
             text-decoration: none;
           }
         }
+        .dropdown-menu {
+          min-width: 100px;
+          hr {
+            background-color: #e8e8e8;
+            border: 0;
+            height: 1px;
+            margin: 5px 0;
+          }
+          a {
+            text-transform: uppercase;
+            letter-spacing: 0px;
+            &:hover {
+              background-color: transparent;
+              text-decoration: underline;
+            }
+            &:after {
+              border-right: 0;
+            }
+          }
+        }
       }
       .login,
       .signup {
@@ -242,6 +265,38 @@
   @media (min-width:768px) {
     .modal-dialog {
       margin: 5px auto;
+    }
+    .navbar-right .dropdown-menu {
+      right: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      &:after,
+      &:before {
+        content: " ";
+        width: 0;
+        position: absolute;
+        border: solid transparent;
+        height: 0;
+        pointer-events: none;
+        bottom: 100%;
+        left: 50%;
+      }
+      &:before {
+        border-bottom-color: #e8e8e8;
+        margin-left: -11px;
+        border-width: 11px;
+      }
+      &:after {
+        border-bottom-color: #fff;
+        border-width: 10px;
+        margin-left: -10px;
+      }
+      a {
+        color: #333;
+        &:after {
+          border-right: 0;
+        }
+      }
     }
   }
 

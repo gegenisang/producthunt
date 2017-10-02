@@ -130,6 +130,10 @@ body {
   margin-bottom: 0px; }
   #navbar.navbar-default {
     border-bottom: 1px solid #e8e8e8; }
+  #navbar.navbar-default .navbar-nav > .open > a,
+  #navbar.navbar-default .navbar-nav > .open > a:focus,
+  #navbar.navbar-default .navbar-nav > .open > a:hover {
+    background-color: transparent; }
   #navbar .navbar-brand {
     margin-top: -10px; }
     #navbar .navbar-brand img {
@@ -150,7 +154,7 @@ body {
   #navbar #form {
     position: absolute;
     left: 50%;
-    z-index: 2000;
+    z-index: 3;
     margin-left: -150px;
     width: 280px;
     top: 2px; }
@@ -222,7 +226,7 @@ body {
     color: #999;
     padding: 0 22px 22px;
     cursor: pointer; }
-  #navbar .navbar-right li:last-child a {
+  #navbar .navbar-right li[class="signup"] a {
     padding-left: 0px; }
   #navbar .navbar-right a {
     color: #999;
@@ -267,6 +271,21 @@ body {
     #navbar .navbar-right .threedot a:hover {
       color: #666;
       text-decoration: none; }
+  #navbar .navbar-right .threedot .dropdown-menu {
+    min-width: 100px; }
+    #navbar .navbar-right .threedot .dropdown-menu hr {
+      background-color: #e8e8e8;
+      border: 0;
+      height: 1px;
+      margin: 5px 0; }
+    #navbar .navbar-right .threedot .dropdown-menu a {
+      text-transform: uppercase;
+      letter-spacing: 0px; }
+      #navbar .navbar-right .threedot .dropdown-menu a:hover {
+        background-color: transparent;
+        text-decoration: underline; }
+      #navbar .navbar-right .threedot .dropdown-menu a:after {
+        border-right: 0; }
   #navbar .navbar-right .login a span,
   #navbar .navbar-right .signup a span {
     padding: 6px 12px;
@@ -292,7 +311,32 @@ body {
 
 @media (min-width: 768px) {
   .modal-dialog {
-    margin: 5px auto; } }
+    margin: 5px auto; }
+  .navbar-right .dropdown-menu {
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%); }
+    .navbar-right .dropdown-menu:after, .navbar-right .dropdown-menu:before {
+      content: " ";
+      width: 0;
+      position: absolute;
+      border: solid transparent;
+      height: 0;
+      pointer-events: none;
+      bottom: 100%;
+      left: 50%; }
+    .navbar-right .dropdown-menu:before {
+      border-bottom-color: #e8e8e8;
+      margin-left: -11px;
+      border-width: 11px; }
+    .navbar-right .dropdown-menu:after {
+      border-bottom-color: #fff;
+      border-width: 10px;
+      margin-left: -10px; }
+    .navbar-right .dropdown-menu a {
+      color: #333; }
+      .navbar-right .dropdown-menu a:after {
+        border-right: 0; } }
 
 @media (min-width: 992px) {
   .modal-lg {
