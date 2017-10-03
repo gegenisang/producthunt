@@ -45,6 +45,10 @@ body {
         li {
           padding: 20px;
           position: relative;
+          cursor: pointer;
+          &:hover {
+            background-color: #f9f9f9;
+          }
           .list-img {
             float: left;
             border: 1px solid #e8e8e8;
@@ -70,10 +74,29 @@ body {
               line-height: 18px;
             }
             span {
-              display: block;
+              display: inline-block;
               font-weight: 400;
               font-size: 11px;
               color: #999;
+              a {
+                color: #999;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+            .userImg {
+              position: relative;
+              margin-right: 4px;
+              img {
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                border-radius: 50%; // position: absolute;
+                &.b {
+                  margin-left: -10px;
+                }
+              }
             }
           }
           .link-button {
@@ -91,6 +114,10 @@ body {
               text-align: center;
               border: 1px solid #e8e8e8;
               border-radius: 3px;
+              text-transform: uppercase;
+              &:hover {
+                background-color: #e8e8e8;
+              }
             }
           }
         }
