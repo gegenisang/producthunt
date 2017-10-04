@@ -30,6 +30,18 @@ body {
       background-color: #fff;
       border-radius: 3px;
       margin-bottom: 20px;
+      .btn-group {
+        .button {
+          width: 100%;
+        }
+      }
+      .input-group-addon {
+        background-color: transparent;
+        color: #999;
+        &:first-child {
+          border-right: 0;
+        }
+      }
     }
     .content-section {
       background-color: #fff;
@@ -173,8 +185,60 @@ body {
                 line-height: 24px;
                 margin-bottom: 20px;
               }
+              .user-pic {
+                display: block;
+                position: relative;
+                margin-bottom: 20px;
+                img {
+                  height: 36px;
+                  border-radius: 50%;
+                  &.b {
+                    margin-left: -16px;
+                  }
+                }
+                a {
+                  color: #999;
+                  margin-left: 4px;
+                  &:hover {
+                    text-decoration: underline;
+                  }
+                }
+              }
+              .content-footer {
+                .pull-left {
+                  text-transform: uppercase;
+                  background-color: #da552f;
+                  border-radius: 3px;
+                  a {
+                    display: inline-block;
+                    color: #fff;
+                    height: 34px;
+                    border-radius: 3px;
+                    border: 1px solid #da552f;
+                    line-height: 34px;
+                    text-align: center;
+                    padding: 0 13px;
+                    &:hover {
+                      background-color: #ea532a;
+                      border-color: #ea532a;
+                    }
+                  }
+                }
+                .pull-right {
+                  color: #999;
+                  text-transform: uppercase;
+                }
+              }
             }
           }
+        }
+      }
+      .downjobs {
+        text-align: center;
+        padding: 10px;
+        a {
+          font-size: 20px;
+          color: #999;
         }
       }
     }

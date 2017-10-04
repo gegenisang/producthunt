@@ -111,6 +111,13 @@ body {
       background-color: #fff;
       border-radius: 3px;
       margin-bottom: 20px; }
+      .main .main-content .filter-section .btn-group .button {
+        width: 100%; }
+      .main .main-content .filter-section .input-group-addon {
+        background-color: transparent;
+        color: #999; }
+        .main .main-content .filter-section .input-group-addon:first-child {
+          border-right: 0; }
     .main .main-content .content-section {
       background-color: #fff;
       border: 1px solid #e8e8e8;
@@ -223,6 +230,45 @@ body {
             font-size: 13px;
             line-height: 24px;
             margin-bottom: 20px; }
+          .main .main-content .content-section .content-list .panel-collapse .panel-content .content-des .user-pic {
+            display: block;
+            position: relative;
+            margin-bottom: 20px; }
+            .main .main-content .content-section .content-list .panel-collapse .panel-content .content-des .user-pic img {
+              height: 36px;
+              border-radius: 50%; }
+              .main .main-content .content-section .content-list .panel-collapse .panel-content .content-des .user-pic img.b {
+                margin-left: -16px; }
+            .main .main-content .content-section .content-list .panel-collapse .panel-content .content-des .user-pic a {
+              color: #999;
+              margin-left: 4px; }
+              .main .main-content .content-section .content-list .panel-collapse .panel-content .content-des .user-pic a:hover {
+                text-decoration: underline; }
+          .main .main-content .content-section .content-list .panel-collapse .panel-content .content-des .content-footer .pull-left {
+            text-transform: uppercase;
+            background-color: #da552f;
+            border-radius: 3px; }
+            .main .main-content .content-section .content-list .panel-collapse .panel-content .content-des .content-footer .pull-left a {
+              display: inline-block;
+              color: #fff;
+              height: 34px;
+              border-radius: 3px;
+              border: 1px solid #da552f;
+              line-height: 34px;
+              text-align: center;
+              padding: 0 13px; }
+              .main .main-content .content-section .content-list .panel-collapse .panel-content .content-des .content-footer .pull-left a:hover {
+                background-color: #ea532a;
+                border-color: #ea532a; }
+          .main .main-content .content-section .content-list .panel-collapse .panel-content .content-des .content-footer .pull-right {
+            color: #999;
+            text-transform: uppercase; }
+      .main .main-content .content-section .downjobs {
+        text-align: center;
+        padding: 10px; }
+        .main .main-content .content-section .downjobs a {
+          font-size: 20px;
+          color: #999; }
 
 .side-section {
   padding: 20px;
