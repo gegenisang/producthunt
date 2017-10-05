@@ -18,7 +18,6 @@ img {
   margin: 0; }
 
 * {
-  outline: 1px solid #ddd;
   box-sizing: border-box; }
 
 li {
@@ -50,7 +49,6 @@ img {
   margin: 0; }
 
 * {
-  outline: 1px solid #ddd;
   box-sizing: border-box; }
 
 li {
@@ -111,13 +109,48 @@ body {
       background-color: #fff;
       border-radius: 3px;
       margin-bottom: 20px; }
-      .main .main-content .filter-section .btn-group .button {
+      .main .main-content .filter-section .btn-group.open .dropdown-toggle {
+        box-shadow: none; }
+      .main .main-content .filter-section .dropdown-menu {
+        min-width: 100%;
+        max-width: 100%;
+        top: 26px;
+        box-shadow: none;
+        border-top: 1px solid transparent; }
+        .main .main-content .filter-section .dropdown-menu li a {
+          color: #999;
+          word-wrap: break-word;
+          text-align: left; }
+          .main .main-content .filter-section .dropdown-menu li a:hover {
+            background-color: transparent;
+            text-decoration: underline; }
+      .main .main-content .filter-section .open > .dropdown-toggle.btn-default,
+      .main .main-content .filter-section .btn-default:active:focus,
+      .main .main-content .filter-section .btn-default:active:hover,
+      .main .main-content .filter-section .btn-default:hover,
+      .main .main-content .filter-section .btn-default,
+      .main .main-content .filter-section .open > .dropdown-toggle.btn-default:focus,
+      .main .main-content .filter-section .open > .dropdown-toggle.btn-default:hover {
+        color: #999;
+        box-shadow: none;
+        background-color: transparent;
+        border-color: #ccc; }
+      .main .main-content .filter-section .form-control {
+        padding: 6px 2px;
+        border-left: 0;
+        border-right: 0; }
+      .main .main-content .filter-section .form-control:focus {
+        border-color: #ccc;
+        outline: none;
+        -webkit-box-shadow: none;
+        box-shadow: none; }
+      .main .main-content .filter-section .btn-group {
         width: 100%; }
+        .main .main-content .filter-section .btn-group .btn {
+          width: 100%; }
       .main .main-content .filter-section .input-group-addon {
         background-color: transparent;
         color: #999; }
-        .main .main-content .filter-section .input-group-addon:first-child {
-          border-right: 0; }
     .main .main-content .content-section {
       background-color: #fff;
       border: 1px solid #e8e8e8;
