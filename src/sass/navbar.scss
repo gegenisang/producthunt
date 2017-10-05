@@ -2,6 +2,7 @@
 #navbar {
   background-color: #fff;
   margin-bottom: 0;
+  border-radius: 0px;
   .navbar-brand {
     margin-top: -10px;
     .img {
@@ -25,6 +26,34 @@
         color: #999;
         font-size: 13px;
         margin-top: -1px;
+      }
+    }
+  }
+  .navbar-right {
+    .ship {
+      color: #da552f;
+      &:hover {
+        text-decoration: underline;
+      }
+      img {
+        height: 13px;
+        display: inline-block;
+        margin-left: 4px;
+      }
+    }
+    li {
+      position: relative;
+      sup {
+        position: absolute;
+        top: 10px;
+        right: 8px;
+        color: #da552f;
+      }
+      span {
+        display: inline-block;
+        border: 1px solid #e8e8e8;
+        border-radius: 3px;
+        padding: 6px 12px;
       }
     }
   }
