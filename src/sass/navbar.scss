@@ -49,11 +49,77 @@
         right: 8px;
         color: #da552f;
       }
-      span {
-        display: inline-block;
-        border: 1px solid #e8e8e8;
-        border-radius: 3px;
-        padding: 6px 12px;
+      &.threedot {
+        a {
+          font-size: 8px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: #999;
+          &:hover,
+          &:focus {
+            background-color: transparent;
+            color: #555;
+          }
+        }
+        .dropdown-menu {
+          left: 50%;
+          transform: translateX(-50%);
+          padding-top: 20px;
+          box-shadow: none;
+          &:before,
+          &:after {
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            content: "";
+            height: 0;
+            width: 0;
+          }
+          &:before {
+            border: 12px solid transparent;
+            border-bottom: 12px solid #ccc;
+            margin-left: -12px;
+          }
+          &:after {
+            border: 10px solid transparent;
+            border-bottom: 10px solid #fff;
+            margin-left: -10px;
+          }
+          a {
+            color: #666;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      &.login,
+      &.signup {
+        span {
+          padding: 6px 12px;
+          border-radius: 3px;
+          text-transform: uppercase;
+        }
+      }
+      &.login {
+        span {
+          color: #000;
+          border: 1px solid #e8e8e8;
+          &:hover {
+            background-color: #e8e8e8;
+          }
+        }
+      }
+      &.signup {
+        span {
+          color: #fff;
+          border: 1px solid #da552f;
+          background-color: #da552f;
+          &:hover {
+            background-color: #ea532a;
+            border-color: #ea532a;
+          }
+        }
       }
     }
   }
