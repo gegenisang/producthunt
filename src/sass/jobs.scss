@@ -92,6 +92,25 @@ body {
       border-radius: 3px;
       .section-title {
         border-bottom: 1px solid #e8e8e8;
+        .pull-left {
+          color: #000;
+          text-transform: uppercase;
+        }
+        .pull-right {
+          color: #999;
+          text-transform: uppercase;
+          vertical-align: middle;
+          input {
+            vertical-align: top;
+            outline: 0;
+            box-shadow: none;
+            &:focus,
+            &:hover {
+              box-shadow: none;
+              outline: none;
+            }
+          }
+        }
         p {
           padding: 15px;
         }

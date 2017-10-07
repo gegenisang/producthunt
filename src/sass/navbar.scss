@@ -29,36 +29,91 @@
       }
     }
   }
-  #search-form {
-    float: left;
-    margin: 10px auto;
-    z-index: 3;
-    .search-box {
-      width: 100%;
+  #form {
+    width: 280px;
+    margin-left: -200px;
+    left: 50%;
+    position: absolute;
+    z-index: 10;
+    form {
       position: relative;
-      input {
-        height: 30px;
-        width: 280px;
-        border: 1px solid #e8e8e8;
-        border-radius: 3px;
-        padding: 0 10px 0 32px;
-        outline: none;
-        box-shadow: none;
-        &::placeholder {
+    }
+    input {
+      width: 100%;
+      padding-left: 24px;
+    }
+    .fa {
+      display: inline-block;
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      color: #999;
+      z-index: 4;
+    }
+  }
+  #form-modal {
+    // position: relative;
+    .modal-dialog {
+      // width: 600px;
+      margin: 10px auto;
+    }
+    .modal-header {
+      position: relative;
+      border-bottom: none;
+      .search-form {
+        padding-left: 30px;
+        position: relative;
+        width: 100%;
+        .fa-search {
+          position: absolute;
+          top: 0;
+          left: 0;
+          font-size: 16px;
+          margin-top: 2px;
           color: #999;
         }
-        &:hover,
-        &:focus {
+        #search-input {
+          position: absolute;
+          top: 0;
+          left: 24px;
+          width: 90%;
+          border: none;
           outline: none;
         }
       }
-      .fa {
-        position: absolute;
-        color: #999;
-        top: 6px;
-        font-size: 18px;
-        left: 10px;
+    }
+    .modal-content {
+      box-shadow: none;
+      border-radius: 3px 3px 0px 0px;
+    }
+    .modal-body {
+      padding-top: 0px;
+      ul {
+        // padding-left: px;
+        li {
+          margin-bottom: 10px;
+          &:hover {
+            background-color: #e8e8e8;
+          }
+          a {
+            width: 100%;
+            cursor: pointer;
+            display: block;
+            padding: 10px;
+            color: #000;
+            font-size: 13px;
+            line-height: 18px;
+            font-weight: 400;
+          }
+        }
       }
+    }
+    .modal-footer {
+      border-top: none;
+      text-transform: uppercase;
+      color: #999;
+      padding: 0 22px 22px;
+      cursor: pointer;
     }
   }
   .navbar-right {
@@ -167,9 +222,45 @@
   }
 }
 
+@media (max-width:992px) {
+  #navbar {
+    position: relative;
+    .navbar-brand {
+      .des {
+        display: none;
+      }
+    }
+    #form {
+      position: absolute;
+      left: 50%;
+      margin-left: -150px;
+    }
+    .navbar-right {
+      .ship,
+      .ask,
+      .jobs,
+      .login,
+      .signup {
+        display: none;
+      }
+      .threedot {
+        position: relative;
+        float: right;
+        right: 35px;
+        .dropdown-menu {
+          position: absolute;
+          top: 48px;
+          transform: translateX(-50%);
+          border: 1px solid #ccc;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width:768px) {
   #navbar {
-    // background-color: green;
     position: relative;
     .navbar-brand {
       left: 50%;
@@ -179,8 +270,8 @@
         display: none;
       }
     }
-    #search-form {
-      float: left;
+    input {
+      display: none;
     }
     .navbar-right {
       .ship,

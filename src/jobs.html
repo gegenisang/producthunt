@@ -67,12 +67,44 @@
           <p class="logo-text">The best new products, every day</p>
         </div>
       </a>
-      <form id="search-form">
-        <div class="search-box">
+      <div id="form" data-toggle="modal" data-target="#form-modal" class="navbar-left">
+        <form class="navbar-form">
           <i class="fa fa-search"></i>
-          <input type="text" placeholder="Discover your next favorite thing...">
+          <input type="text" class="form-control" placeholder="Discover your next favorite thing...">
+        </form>
+      </div>
+      <div class="modal fade" id="form-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <form class="search-form">
+                <i class="fa fa-search"></i>
+                <input type="text" id="search-input" placeholder="Discover your next favorite thing...">
+              </form>
+            </div>
+            <div class="modal-body">
+              <ul>
+                <li><a href="javascript:;">Slack</a></li>
+                <li><a href="javascript:;">Nots</a></li>
+                <li><a href="javascript:;">Mac Apps</a></li>
+                <li><a href="javascript:;">Productivity</a></li>
+                <li><a href="javascript:;">Developer Tools</a></li>
+                <li><a href="javascript:;">Emojis</a></li>
+              </ul>
+
+            </div>
+            <div class="modal-footer">
+              <span class="pull-left">press enter to see all results</span>
+              <span class="pull-right">Powered by
+                <strong>algolia</strong>
+              </span>
+            </div>
+          </div>
         </div>
-      </form>
+      </div>
       <div class="navbar-right">
         <ul class="nav navbar-nav">
           <li class="ship"><a href="#">Ship<img src="img/ship.png" alt="ship" class="ship"></a>
